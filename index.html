@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Job</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Assignment 1</h2>
+    <h1>carousel</h1>
+
+    <div class="carousel">
+      <div class="carousel-slide">
+        <img
+          src="https://saralhome.com/cdn/shop/files/Bed-covers-Desktop-banner_2.jpg?v=1694693777"
+          alt="img 1"
+          class="carousel-image"
+        />
+        <img
+          src="https://saralhome.com/cdn/shop/files/Curtains-Desktop-banner_2.jpg?v=1694693929"
+          alt="img 2"
+          class="carousel-image"
+        />
+        <img
+          src="https://saralhome.com/cdn/shop/files/home_page_3_Banner.jpg?v=1690378260"
+          alt="img 3"
+          class="carousel-image"
+        />
+      </div>
+
+      <a class="prev">❮</a>
+      <a class="next">❯</a>
+    </div>
+
+    <h2>Assignment 2</h2>
+
+    <div class="container">
+      <h1>Chocolate Pack</h1>
+      <div class="products">
+        <div class="product">
+          <img
+            src="https://images.pexels.com/photos/8105105/pexels-photo-8105105.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="milk Chocolate"
+          />
+          <p>Milk Chocolate</p>
+          <p>$2.00</p>
+          <input
+            type="number"
+            id="milk-chocolate"
+            min="0"
+            max="8"
+            value="0"
+            onchange="updateTotal()"
+          />
+        </div>
+        <div class="product">
+          <img
+            src="https://images.pexels.com/photos/4110101/pexels-photo-4110101.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Dark Chocolate"
+          />
+          <p>Dark Chocolate</p>
+          <p>$1.50</p>
+          <input
+            type="number"
+            id="dark-chocolate"
+            min="0"
+            max="8"
+            value="0"
+            onchange="updateTotal()"
+          />
+        </div>
+        <div class="product">
+          <img
+            src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Chocolate Cake"
+          />
+          <p>Chocolate Cake</p>
+          <p>$1.75</p>
+          <input
+            type="number"
+            id="Chocolate-Cake"
+            min="0"
+            max="8"
+            value="0"
+            onchange="updateTotal()"
+          />
+        </div>
+      </div>
+
+      <div class="price-container">
+        <div class="total" id="total-display">
+          Total Items: 0 Total Price: $0.00
+        </div>
+
+        <button id="order-button" onclick="submitOrder()" disabled="true">
+          Order Now
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
